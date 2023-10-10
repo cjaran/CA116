@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 
 n = int(input())
-s = len(str(n))
-
-if s == 1:
+t = n
+r = 0
+while(n > 0):
+    d = n % 10
+    r = r * 10 + d
+    n = n // 10
+if(t == r):
     print("yes")
-elif s == 2:
+else:
+    print("no")
