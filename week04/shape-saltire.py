@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 
-#n = int(input())
-n = 7
+n = int(input())
+#n = 7
 
 i = 0
 while i < n:
-    print("*" + (" " * ((n - i) - 2)) + "*")
-    i = i + 1
+   if i < (n // 2):
+      print(" " * i + "*" + " " * (n - i - i - 2) + "*")
+   elif i == n // 2:
+      print(" " * ((n // 2)) + "*")
+   elif i > n // 2:
+      print(" " * (n - i - 1) + "*" + " " * (i + i - n) + "*")
+   i = i + 1
