@@ -2,15 +2,11 @@
 
 a = int(input())
 b = int(input())
-oa = 0
-ob = 0
+r = a % b
 
-i = 0
-while b != 0:
-    ob = b
-    oa = a
-    b = oa % ob
+while r != 0:
     a = b
-    i = i + 1
+    b = r
+    r = a % b
 
-print(i)
+print(b)
