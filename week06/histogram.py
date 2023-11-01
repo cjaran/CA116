@@ -1,24 +1,14 @@
 #!/usr/bin/env python3
 
-s = input()
-a = []
-h = []
+data = [0] * 10
 
+s = input()
 while s != "end":
-    n = int(s)
-    a.append(n)
+    s = int(s)
+    data[s] = data[s] + 1
     s = input()
 
 i = 0
-while i < len(a):
-    j = 0
-    while j < len(a) and j <= 9:
-        count = 0
-        if a[i] == j:
-            count = count + 1
-        add = a[i] + count
-        h.append(add)
-        j = j + 1
+while i < 10:
+    print(i, "*" * data[i])
     i = i + 1
-
-print(h)
