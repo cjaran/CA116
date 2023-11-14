@@ -6,6 +6,8 @@ args = sys.argv[1]
 
 tokens = args.split("/")
 
+print(tokens)
+
 print("scheme:", tokens[0][0:-1])
 i = 0
 while i < len(tokens[2]) and tokens[2][i] != ":":
