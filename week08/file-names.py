@@ -2,8 +2,16 @@
 
 import sys
 
-s = sys.stdin.readlines()
+s = sys.stdin.readline().rstrip()
+a = []
 
-while s != "":
-    print(t[-1])
-    s = sys.stdin.readlines().strip("/")
+while 0 < len(s):
+    a.append(s)
+    s = sys.stdin.readline().rstrip()
+
+i = 0
+while i < len(a):
+    t = a[i]
+    s = t.split("/")
+    print(s[-1])
+    i += 1
